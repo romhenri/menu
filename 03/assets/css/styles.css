@@ -62,7 +62,7 @@ p {
 /*___ Botão ___*/
 
 .container {
-    display: flex; width: 100%;
+    display: flex;
     justify-content: space-between;
     align-items: center;
 } 
@@ -79,17 +79,24 @@ p {
 }
 
 .arrow {
-    width: 20px;
+    width: 20px; cursor: pointer;
     height: 20px;
     margin-left: 3%;
-    margin-right: 3%;
+    margin-right: 3%; transition: 0.3s;
 }
 
-.hitbox1 {
-    background-color: tomato; width: 33px; height:50px;
-    cursor: pointer;
-    z-index: 5; position: fixed;
-    opacity: 0%;
+.arrow:active {
+    rotate: 90deg;
+}
+
+.flip {
+    rotate: 90deg;
+} .flip:hover {
+    rotate: 90deg;
+}
+
+.no-flip {
+    rotate: 0deg;
 }
 
 a, footer {font-size: 10px; font-weight: normal;}
@@ -97,6 +104,10 @@ a, footer {font-size: 10px; font-weight: normal;}
 h4 {font-weight:normal;}
 
 .bgc {background-color: rgb(53, 53, 53)}
+
+.m8-row {margin: 0px 8px 0px 8px 0px;}
+
+.m10-top {margin-top: 10px;}
 
 /* === 6. Media Queries ============================================ */
 
