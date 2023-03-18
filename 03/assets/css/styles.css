@@ -22,7 +22,8 @@ section {
     max-width: 80%;
     min-width: 300px;
 
-    display: flex; flex-direction: column;
+    display: flex;
+    flex-direction: column;
 
     margin: auto;
     margin-bottom: 1%;
@@ -43,7 +44,7 @@ h1 {
     text-align: center;
     /*margin: 10px;*/
     margin: 20px;
-} 
+}
 
 p {
     font: normal 13px Verdana;
@@ -55,7 +56,7 @@ p {
     font-family: 'Montserrat';
     src: url('assets/Montserrat-Regular.ttf');
     format: ('truetype');
-  }
+}
 
 /* Elementos Especiais */
 
@@ -65,24 +66,27 @@ p {
     display: flex;
     justify-content: space-between;
     align-items: center;
-} 
+}
 
 .item1 {
     align-items: center;
     text-align: left;
     display: flex;
-    /* min-width: 50%; */
+    width: 100%;
 }
 
 .item2 {
-    display: flex; flex-direction: row;
+    display: flex;
+    flex-direction: row;
 }
 
 .arrow {
-    width: 20px; cursor: pointer;
+    width: 20px;
+    cursor: pointer;
     height: 20px;
     margin-left: 3%;
-    margin-right: 3%; transition: 0.3s;
+    margin-right: 3%;
+    transition: 0.3s;
 }
 
 .arrow:active {
@@ -91,7 +95,9 @@ p {
 
 .flip {
     rotate: 90deg;
-} .flip:hover {
+}
+
+.flip:hover {
     rotate: 90deg;
 }
 
@@ -99,27 +105,59 @@ p {
     rotate: 0deg;
 }
 
-a, footer {font-size: 10px; font-weight: normal;}
+a, footer {
+    font-size: 10px;
+    font-weight: normal;
+}
 
-h4 {font-weight:normal;}
+h4 {
+    font-weight: normal;
+    width: 100%;
+}
 
-.bgc {background-color: rgb(53, 53, 53)}
+.bgc {
+    background-color: rgb(53, 53, 53)
+}
 
-.m8-row {margin: 0px 8px 0px 8px 0px;}
+.m8-row {
+    margin: 0px 8px 0px 8px 0px;
+}
 
-.m10-top {margin-top: 10px;}
+.m10-top {
+    margin-top: 10px;
+}
 
 /* === 6. Media Queries ============================================ */
 
 @media screen and (max-width:500px) {
-    section {width: 80%;}
+    section {
+        width: 80%;
+    }
 
-    h1 {font-size: 20px; font-weight: normal;}
-    p {font-size: 14px; font-weight: normal;}
-    a, footer {font-size: 12px; font-weight: normal;}
+    h1 {
+        font-size: 20px;
+        font-weight: normal;
+    }
 
-    .txt {font-size: 14px; font-weight: normal;}
-    .txt-min {font-size: 12px; font-weight: normal;}
+    p {
+        font-size: 14px;
+        font-weight: normal;
+    }
+
+    a, footer {
+        font-size: 12px;
+        font-weight: normal;
+    }
+
+    .txt {
+        font-size: 14px;
+        font-weight: normal;
+    }
+
+    .txt-min {
+        font-size: 12px;
+        font-weight: normal;
+    }
 }
 
 /* THE END */
